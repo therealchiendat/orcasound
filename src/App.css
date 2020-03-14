@@ -2,37 +2,61 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-bar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.menuButton {
+  margin-right: 5px;
+  }
+
+/* .app-title {
+  align-self: center;
+} */
+.maps {
+  z-index: 0;
+  height: "calc(100vh - 64px)";
+  width: '100%';
 }
 
-.App-link {
-  color: #61dafb;
+.floating-element {
+  position: fixed;
+  z-index: 10;
+  right: 10vw;
+  top: 20vh;
+  width: 25vw;
+  height: 20vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.visible {
+  visibility: visible;
+}
+
+.card-sample{
+  width: 100%;
+}
+
+.card-cover{
+  width: 100%;
+  height: 100%;
+}
+
+.marker {
+  color: 'white';
+  background: 'red';
+  display: 'inline-flex';
+  text-align: 'center';
+  align-items: 'center';
+  justify-content: 'center';
+  border-radius: '100%';
+  width: '50px';
+  height: '50px';
+  cursor: 'pointer';
+}
+
+.button-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
